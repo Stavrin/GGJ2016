@@ -1,25 +1,42 @@
 fileFormatVersion: 2
 guid: 26efe8a79239547429cbf6120ac84764
-timeCreated: 1454178132
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: charsetRedanim_0
-    21300002: charsetRedanim_1
-    21300004: charsetRedanim_2
-    21300006: charsetRedanim_3
-    21300008: charsetRedanim_4
-    21300010: charsetRedanim_5
-    21300012: charsetRedanim_6
-    21300014: charsetRedanim_7
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: charsetRedanim_0
+  - first:
+      213: 21300002
+    second: charsetRedanim_1
+  - first:
+      213: 21300004
+    second: charsetRedanim_2
+  - first:
+      213: 21300006
+    second: charsetRedanim_3
+  - first:
+      213: 21300008
+    second: charsetRedanim_4
+  - first:
+      213: 21300010
+    second: charsetRedanim_5
+  - first:
+      213: 21300012
+    second: charsetRedanim_6
+  - first:
+      213: 21300014
+    second: charsetRedanim_7
+  externalObjects: {}
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -28,37 +45,66 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    serializedVersion: 2
+    filterMode: 1
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 275
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: charsetRedanim_0
+    - serializedVersion: 2
+      name: charsetRedanim_0
       rect:
         serializedVersion: 2
         x: 0
@@ -68,17 +114,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 65, y: 95}
-        - {x: 27, y: 113}
-        - {x: -57, y: 113}
-        - {x: -99, y: 86}
-        - {x: -99, y: -113}
-        - {x: 64, y: -113}
-        - {x: 76, y: -100}
-        - {x: 99, y: -24}
-        - {x: 99, y: 20}
-    - name: charsetRedanim_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charsetRedanim_1
       rect:
         serializedVersion: 2
         x: 200
@@ -88,16 +135,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -80, y: -113}
-        - {x: 42, y: -113}
-        - {x: 77, y: -68}
-        - {x: 77, y: 88}
-        - {x: 73, y: 100}
-        - {x: 33, y: 113}
-        - {x: -72, y: 113}
-        - {x: -80, y: 107}
-    - name: charsetRedanim_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charsetRedanim_2
       rect:
         serializedVersion: 2
         x: 400
@@ -107,16 +156,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -70, y: 113}
-        - {x: -79, y: 107}
-        - {x: -79, y: -3}
-        - {x: -27, y: -113}
-        - {x: 41, y: -113}
-        - {x: 66, y: -46}
-        - {x: 66, y: 104}
-        - {x: 37, y: 113}
-    - name: charsetRedanim_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charsetRedanim_3
       rect:
         serializedVersion: 2
         x: 600
@@ -126,23 +177,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 52, y: 89}
-        - {x: 25, y: 113}
-        - {x: -32, y: 113}
-        - {x: -52, y: 107}
-        - {x: -80, y: 95}
-        - {x: -80, y: -53}
-        - {x: -65, y: -113}
-        - {x: -24, y: -113}
-        - {x: -20, y: -111}
-        - {x: 8, y: -90}
-        - {x: 26, y: -113}
-        - {x: 45, y: -113}
-        - {x: 55, y: -107}
-        - {x: 78, y: -12}
-        - {x: 78, y: 21}
-    - name: charsetRedanim_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charsetRedanim_4
       rect:
         serializedVersion: 2
         x: 800
@@ -152,35 +198,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 42, y: 113}
-        - {x: -54, y: 113}
-        - {x: -81, y: 73}
-        - {x: -81, y: 54}
-        - {x: -79, y: 48}
-        - {x: -68, y: 52}
-        - {x: -38, y: 35}
-        - {x: -30, y: 35}
-        - {x: -26, y: 40}
-        - {x: -25, y: 45}
-        - {x: -25, y: 41}
-        - {x: -27, y: 38}
-        - {x: -27, y: 30}
-        - {x: -81, y: -80}
-        - {x: -81, y: -92}
-        - {x: -63, y: -91}
-        - {x: -46, y: -86}
-        - {x: -40, y: -84}
-        - {x: -27, y: -79}
-        - {x: -5, y: -69}
-        - {x: 4, y: -63}
-        - {x: 15, y: -54}
-        - {x: 50, y: -110}
-        - {x: 71, y: -110}
-        - {x: 92, y: -2}
-        - {x: 92, y: 45}
-        - {x: 68, y: 106}
-    - name: charsetRedanim_5
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charsetRedanim_5
       rect:
         serializedVersion: 2
         x: 1000
@@ -190,20 +219,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -48, y: 113}
-        - {x: -80, y: 97}
-        - {x: -80, y: -53}
-        - {x: -65, y: -113}
-        - {x: -24, y: -113}
-        - {x: -20, y: -111}
-        - {x: 8, y: -90}
-        - {x: 26, y: -113}
-        - {x: 62, y: -113}
-        - {x: 78, y: -87}
-        - {x: 78, y: 53}
-        - {x: 36, y: 113}
-    - name: charsetRedanim_6
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charsetRedanim_6
       rect:
         serializedVersion: 2
         x: 1200
@@ -213,18 +240,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 34, y: 113}
-        - {x: -35, y: 113}
-        - {x: -69, y: 99}
-        - {x: -79, y: 82}
-        - {x: -79, y: 1}
-        - {x: -19, y: -113}
-        - {x: 22, y: -113}
-        - {x: 66, y: -50}
-        - {x: 66, y: 73}
-        - {x: 63, y: 93}
-    - name: charsetRedanim_7
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charsetRedanim_7
       rect:
         serializedVersion: 2
         x: 1400
@@ -234,17 +261,38 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -81, y: -113}
-        - {x: 41, y: -113}
-        - {x: 76, y: -68}
-        - {x: 76, y: 88}
-        - {x: 72, y: 100}
-        - {x: 32, y: 113}
-        - {x: -73, y: 113}
-        - {x: -81, y: 107}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      charsetRedanim_0: 21300000
+      charsetRedanim_3: 21300006
+      charsetRedanim_6: 21300012
+      charsetRedanim_7: 21300014
+      charsetRedanim_2: 21300004
+      charsetRedanim_4: 21300008
+      charsetRedanim_1: 21300002
+      charsetRedanim_5: 21300010
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
