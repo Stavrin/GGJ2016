@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Assets.Scripts;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class playerRedController : MonoBehaviour
 {

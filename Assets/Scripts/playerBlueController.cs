@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Assets.Scripts;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class playerBlueController : MonoBehaviour {
     public int speed;
@@ -11,7 +12,12 @@ public class playerBlueController : MonoBehaviour {
 	public AudioClip Canon1;
 	public AudioClip Canon2;
 
-    public static Vector3 poistionTop;
+	private bool m_Horizontal;
+	private bool m_Vertical;
+    private float m_HorizontalSpeed;
+    private float m_VerticalSpeed;
+
+	public static Vector3 poistionTop;
 
     // Use this for initialization
     void Start () {
@@ -21,32 +27,45 @@ public class playerBlueController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-	    if (!TimeControllerScript.IsGameOver)
+        float v = CrossPlatformInputManager.GetAxis("Vertical");
+        float h = CrossPlatformInputManager.GetAxis("Horizontal");
+
+        if (!TimeControllerScript.IsGameOver)
 	    {
-	        if (Input.GetKey("a"))
-	        {
-	            blueTopArrow.transform.position += new Vector3(-speed, 0, 0)*Time.deltaTime;
-	        }
-	        if (Input.GetKey("d"))
-	        {
-	            blueTopArrow.transform.position += new Vector3(speed, 0, 0)*Time.deltaTime;
-	        }
-	        if (Input.GetKey("w"))
-	        {
-	            blueSideArrow.transform.position += new Vector3(0, speed, 0)*Time.deltaTime;
+
+            if (!m_Horizontal)
+            {
+                // Read the jump input in Update so button presses aren't missed.
+                m_HorizontalSpeed = CrossPlatformInputManager.GetAxis("Horizontal");
+
+            }
+
+            if (!m_Vertical)
+            {
+                // Read the jump input in Update so button presses aren't missed.
+                m_VerticalSpeed = CrossPlatformInputManager.GetAxis("Vertical");
+            }
+
+
+	           blueTopArrow.transform.position += new Vector3(h-speed, 0, 0)*Time.deltaTime;
+	        
+	      
+	        
+	           blueTopArrow.transform.position += new Vector3(h+speed, 0, 0)*Time.deltaTime;
+	        
+
+	            blueSideArrow.transform.position += new Vector3(0, v+speed, 0)*Time.deltaTime;
                 if (blueSideArrow.transform.position.y > 1.8f)
                 {
                     blueSideArrow.transform.position = new Vector2(blueSideArrow.transform.position.x, 1.79f);
                 }
-            }
-	        if (Input.GetKey("s"))
-	        {
-                blueSideArrow.transform.position += new Vector3(0, -speed, 0)*Time.deltaTime;
+
+                blueSideArrow.transform.position += new Vector3(0, v-speed, 0)*Time.deltaTime;
                 if (blueSideArrow.transform.position.y < -1.05f)
                 {
                     blueSideArrow.transform.position = new Vector2(blueSideArrow.transform.position.x, -1.04f);
                 }
-            }
+
 	        if (Input.GetKeyDown(KeyCode.E))
 	        {
 	            if (!BallRepository.IsBluePlayerBallsMax)
@@ -60,5 +79,12 @@ public class playerBlueController : MonoBehaviour {
 	            
 	        }
 	    }
+    }
+
+    private void FixedUpdate()
+    {
+        // Read the inputs.
+       // float v = CrossPlatformInputManager.GetAxis("Vertical");
+       // float h = CrossPlatformInputManager.GetAxis("Horizontal");
     }
 }
