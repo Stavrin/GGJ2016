@@ -66,7 +66,7 @@ public class playerBlueController : MonoBehaviour {
                     blueSideArrow.transform.position = new Vector2(blueSideArrow.transform.position.x, -1.04f);
                 }
 
-	        if (Input.GetKeyDown(KeyCode.E))
+	        if (CrossPlatformInputManager.GetButtonDown("P1 B"))
 	        {
 	            if (!BallRepository.IsBluePlayerBallsMax)
 	            {

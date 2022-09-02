@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Assets.Scripts;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class blockController : MonoBehaviour
 {
@@ -56,7 +57,7 @@ public class blockController : MonoBehaviour
     {
         RefreshBlocks();
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (CrossPlatformInputManager.GetButtonDown("P1 A"))
         {
             if (bluePlayerBlockCount < blockCount)
             {
@@ -68,7 +69,7 @@ public class blockController : MonoBehaviour
                 }
             }
         }
-        if (Input.GetKeyDown(KeyCode.U))
+        if (CrossPlatformInputManager.GetButtonDown("P2 A"))
         {
             if (redPlayerBlockCount < blockCount)
             {

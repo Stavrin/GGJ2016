@@ -12,6 +12,13 @@ public class playerRedController : MonoBehaviour
     public GameObject ball;
 	public AudioClip Canon1;
 	public AudioClip Canon2;
+
+    private bool m_Horizontal;
+    private bool m_Vertical;
+    private float m_HorizontalSpeed;
+    private float m_VerticalSpeed;
+
+
     // Use this for initialization
     void Start()
     {
@@ -21,33 +28,45 @@ public class playerRedController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        float v = CrossPlatformInputManager.GetAxis("P2 Vertical");
+        float h = CrossPlatformInputManager.GetAxis("P2 Horizontal");
+
         if (!TimeControllerScript.IsGameOver)
         {
-            if (Input.GetKey(KeyCode.J))
+
+            if (!m_Horizontal)
             {
-                redTopArrow.transform.position += new Vector3(-speed, 0, 0) * Time.deltaTime;
+                // Read the jump input in Update so button presses aren't missed.
+                m_HorizontalSpeed = CrossPlatformInputManager.GetAxis("P2 Horizontal");
+
             }
-            if (Input.GetKey(KeyCode.L))
+
+            if (!m_Vertical)
             {
-                redTopArrow.transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+                // Read the jump input in Update so button presses aren't missed.
+                m_VerticalSpeed = CrossPlatformInputManager.GetAxis("P2 Vertical");
             }
-            if (Input.GetKey(KeyCode.I))
-            {
-                redSideArrow.transform.position += new Vector3(0, speed, 0) * Time.deltaTime;
+
+                redTopArrow.transform.position += new Vector3(h-speed, 0, 0) * Time.deltaTime;
+
+
+                redTopArrow.transform.position += new Vector3(h+speed, 0, 0) * Time.deltaTime;
+
+
+                redSideArrow.transform.position += new Vector3(0, v+speed, 0) * Time.deltaTime;
                 if (redSideArrow.transform.position.y > 1.8f)
                 {
                     redSideArrow.transform.position = new Vector2(redSideArrow.transform.position.x, 1.79f);
                 }
-            }
-            if (Input.GetKey(KeyCode.K))
-            {
-                redSideArrow.transform.position += new Vector3(0, -speed, 0) * Time.deltaTime;
+
+                redSideArrow.transform.position += new Vector3(0, v-speed, 0) * Time.deltaTime;
                 if (redSideArrow.transform.position.y < -1.05f)
                 {
                     redSideArrow.transform.position = new Vector2(redSideArrow.transform.position.x, -1.04f);
                 }
-            }
-            if (Input.GetKeyDown(KeyCode.O))
+
+            if (CrossPlatformInputManager.GetButtonDown("P2 B"))
             {
                 if (!BallRepository.IsRedPlayerBallsMax)
                 {
