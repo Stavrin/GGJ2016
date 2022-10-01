@@ -1,5 +1,6 @@
 {
   "dependencies": {
+<<<<<<< Updated upstream
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
@@ -30,6 +31,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> Stashed changes
     "com.unity.collab-proxy": {
       "version": "1.17.1",
       "depth": 0,
@@ -78,6 +81,7 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+<<<<<<< Updated upstream
     "com.unity.purchasing": {
       "version": "4.3.0",
       "depth": 0,
@@ -103,6 +107,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> Stashed changes
     "com.unity.services.core": {
       "version": "1.4.2",
       "depth": 1,
@@ -165,6 +171,7 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< Updated upstream
     "com.unity.xr.legacyinputhelpers": {
       "version": "2.1.9",
       "depth": 0,
@@ -175,6 +182,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> Stashed changes
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

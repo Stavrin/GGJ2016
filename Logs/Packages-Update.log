@@ -1,5 +1,9 @@
 
+<<<<<<< Updated upstream
 === Sat Aug 27 22:11:58 2022
+=======
+=== Sat Oct  1 13:03:14 2022
+>>>>>>> Stashed changes
 
 Packages were changed.
 Update Mode: resetToDefaultDependencies
@@ -45,6 +49,7 @@ The following packages were added:
   com.unity.timeline@1.6.4
   com.unity.ugui@1.0.0
   com.unity.visualscripting@1.7.8
+<<<<<<< Updated upstream
 
 === Sat Aug 27 22:30:44 2022
 
@@ -58,3 +63,5 @@ The following packages were added:
   com.unity.analytics@3.6.12
   com.unity.purchasing@4.3.0
   com.unity.xr.legacyinputhelpers@2.1.9
+=======
+>>>>>>> Stashed changes

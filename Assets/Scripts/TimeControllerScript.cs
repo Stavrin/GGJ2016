@@ -38,7 +38,7 @@ public class TimeControllerScript : MonoBehaviour
             {
                 winText = "BLUE WINS!";
             }
-            if (scoreController.RedPlayerScore> scoreController.BluePlayerScore)
+            if (scoreController.RedPlayerScore > scoreController.BluePlayerScore)
             {
                 winText = "RED WINS!";
             }
@@ -46,7 +46,7 @@ public class TimeControllerScript : MonoBehaviour
             {
                 winText = "DRAW!";
             }
-            _textElement.text = "GAME OVER:\n " + winText;
+            _textElement.text = winText;
 
 
             // // doesn't do anything

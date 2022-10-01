@@ -1,21 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class scoreController : MonoBehaviour {
+public class scoreController : MonoBehaviour
+{
     public static int RedPlayerScore { get; private set; }
     public static int BluePlayerScore { get; private set; }
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         RedPlayerScore = 0;
         BluePlayerScore = 0;
         LogScores();
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-	}
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+    }
 
     private static void LogScores()
     {
@@ -27,7 +29,7 @@ public class scoreController : MonoBehaviour {
     {
         if (!TimeControllerScript.IsGameOver)
         {
-            RedPlayerScore ++;
+            RedPlayerScore++;
             LogScores();
         }
     }

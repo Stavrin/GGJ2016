@@ -135,13 +135,13 @@ public class littleMenController : MonoBehaviour
         GetComponent<Rigidbody2D>().isKinematic = true;
         transform.position += new Vector3(0, 10, 0) * Time.deltaTime;
         manVelocity = new Vector2(0, 1);
-        if (transform.position.y > 5.0f)
-        {
+        //if (transform.position.y > 5.0f)
+        //{
             if (forplayer == "RED")
                 scoreController.addRedPlayerScore();
             if (forplayer == "BLUE")
                 scoreController.addBluePlayerScore();
             Destroy(gameObject);
-        }
+        //}
     }
 }
