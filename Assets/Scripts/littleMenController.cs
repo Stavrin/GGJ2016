@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class littleMenController : MonoBehaviour
 {
@@ -17,6 +18,14 @@ public class littleMenController : MonoBehaviour
     public string state;
 
     private int collisionCount;
+
+    public int RedScore;
+    public int BlueScore;
+
+    public Text RedTxtScore;
+    public Text BlueTxtScore;
+
+    scoreController score;
 
 
     Vector2 manVelocity; //TODO: Rename 
@@ -37,11 +46,19 @@ public class littleMenController : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().sprite = manBlueSprites;
 
         state = "running";
-    }
+
+        RedScore = 0;
+        BlueScore = 0;
+}
 
     // Update is called once per frame
     void Update()
     {
+
+        RedTxtScore.text = scoreController.GetInstance().RedPlayerScore.ToString(); //display scores in game.
+
+        BlueTxtScore.text = scoreController.GetInstance().BluePlayerScore.ToString();
+
 
     }
 
@@ -59,7 +76,7 @@ public class littleMenController : MonoBehaviour
             }
             if (atEndPoint == true)
             {
-                state = "raise";
+               // state = "raise";
             }
         }
 
@@ -73,7 +90,7 @@ public class littleMenController : MonoBehaviour
             }
             if (atEndPoint == true)
             {
-                state = "raise";
+                //state = "raise";
             }
         }
 
@@ -87,9 +104,11 @@ public class littleMenController : MonoBehaviour
             rb.velocity = manVelocity.normalized;
             //rb.AddForce(new Vector2(-10, 0));
         }
+
+
         if(state == "raise")
         {
-            raiseToHeaven();
+            //raiseToHeaven();
         }
     }
 
@@ -101,7 +120,8 @@ public class littleMenController : MonoBehaviour
 
         if (col.gameObject.name == "slopeEnd")
         {
-            isColWithSlope = false;
+            isColWithSlope = true;
+            
         }
 
         if (col.gameObject.name == "slope")
@@ -113,9 +133,11 @@ public class littleMenController : MonoBehaviour
             if (direction == "R")
                 manVelocity = new Vector2(1, 1);
 
-            isColWithSlope = true;
+            isColWithSlope = false;
             rb.velocity = manVelocity.normalized;
 
+            //state = "raise";
+            raiseToHeaven();
         }
 
 
@@ -135,13 +157,24 @@ public class littleMenController : MonoBehaviour
         GetComponent<Rigidbody2D>().isKinematic = true;
         transform.position += new Vector3(0, 10, 0) * Time.deltaTime;
         manVelocity = new Vector2(0, 1);
+        state = "raise";
         //if (transform.position.y > 5.0f)
         //{
-            if (forplayer == "RED")
-                scoreController.addRedPlayerScore();
-            if (forplayer == "BLUE")
-                scoreController.addBluePlayerScore();
-            Destroy(gameObject);
+        if (forplayer == "RED")
+        {
+   
+
+
+            scoreController.GetInstance().addRedPlayerScore();
+            //Destroy(gameObject);
+        }
+        if (forplayer == "BLUE")
+        {
+            
+
+            scoreController.GetInstance().addBluePlayerScore();
+            //Destroy(gameObject);
+        }
         //}
     }
 }

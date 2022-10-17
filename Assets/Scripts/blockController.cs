@@ -87,7 +87,7 @@ public class blockController : MonoBehaviour
     {
         if (Time.time - _lastBlockRefreshTime >= Configuration.BlockRegenerationPerSecond)
         {
-            Debug.Log(string.Format("Block count incrementing from {0} to {1}", blockCount, ++blockCount));
+            //Debug.Log(string.Format("Block count incrementing from {0} to {1}", blockCount, ++blockCount));
             _lastBlockRefreshTime = Time.time;
         }
     }

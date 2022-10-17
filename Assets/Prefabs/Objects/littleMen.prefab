@@ -129,6 +129,12 @@ MonoBehaviour:
   direction: 
   forplayer: 
   state: 
+  RedScore: 0
+  BlueScore: 0
+  RedTxtScore: {fileID: 368810369056357894, guid: 0f081e38f7b28da41be17eae3e25b7f6,
+    type: 3}
+  BlueTxtScore: {fileID: 6570874623094880974, guid: be6a00e93275c4143b57f983ad456943,
+    type: 3}
 --- !u!58 &5890016
 CircleCollider2D:
   m_ObjectHideFlags: 0

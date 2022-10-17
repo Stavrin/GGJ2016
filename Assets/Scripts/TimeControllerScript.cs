@@ -16,6 +16,8 @@ public class TimeControllerScript : MonoBehaviour
     private Text _textElement;
     public static float _startGameTime;
 
+    public Text Winner;
+
 
     void Start()
     {
@@ -34,19 +36,19 @@ public class TimeControllerScript : MonoBehaviour
         else
         {
             string winText = "";
-            if (scoreController.BluePlayerScore > scoreController.RedPlayerScore)
+            if (scoreController.GetInstance().BluePlayerScore > scoreController.GetInstance().RedPlayerScore)
             {
                 winText = "BLUE WINS!";
             }
-            if (scoreController.RedPlayerScore > scoreController.BluePlayerScore)
+            if (scoreController.GetInstance().RedPlayerScore > scoreController.GetInstance().BluePlayerScore)
             {
                 winText = "RED WINS!";
             }
-            else
+            if (scoreController.GetInstance().RedPlayerScore == scoreController.GetInstance().BluePlayerScore)
             {
                 winText = "DRAW!";
             }
-            _textElement.text = winText;
+            Winner.text = winText;
 
 
             // // doesn't do anything
